@@ -96,9 +96,9 @@ export default {
       },
       //数据范围
       dataScope: [
-        { value: "1", label: "全部" },
-        { value: "2", label: "本级" },
-        { value: "3", label: "自定义" }
+        { value: 1, label: "全部" },
+        { value: 2, label: "本级" },
+        { value: 3, label: "自定义" }
       ],
       // 角色权限
       dept: [],
@@ -160,11 +160,13 @@ export default {
     },
     //
     DataRange(val) {
-      if (val == "3") {
+      if (val == 3) {
         this.deptBol = true;
         mygetMenu({ enabled: true }).then(res => {
           this.dept = res.content;
         });
+      } else {
+        this.deptBol = false;
       }
     },
     //
@@ -173,6 +175,10 @@ export default {
     determine() {
       this.$refs["userAddForm"].validate(valid => {
         if (valid) {
+          let dataScope=this.dataScope.filter(item=>{
+            return item.value==this.userAddForm.dataScope
+          })[0].label;
+          this.userAddForm.dataScope=dataScope;
           if (this.absolute) {
             postRole(this.userAddForm).then(res => {
               console.log(res, this.userAddForm, "res");
