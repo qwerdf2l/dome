@@ -52,7 +52,6 @@
           placeholder="请选择部门"
           :flat="true"
           :multiple="true"
-          style="width:485px; "
           @select="openOnInput"
         />
       </el-form-item>

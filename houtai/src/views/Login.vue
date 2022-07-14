@@ -53,7 +53,7 @@ export default {
       formRules: {
         username: [
           { required: true, message: "请输入账号", trigger: "blur" },
-          { min: 5, max: 10, message: "请输入5-10个字符", trigger: "blur" }
+          { min:4, max: 10, message: "请输入5-10个字符", trigger: "blur" }
         ],
         password: [
           {
