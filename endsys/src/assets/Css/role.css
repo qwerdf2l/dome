@@ -1,0 +1,147 @@
+.role {
+    height: 100%;
+    width: 100%;
+}
+
+/* 角色顶部搜索框 */
+.role .roleFrom .el-input__inner {
+    height: 40px !important;
+    width: 202px !important;
+}
+
+.role>.role_form {
+    text-align: left;
+}
+
+/* 角色表格显示信息 */
+.roleTable {
+    width: 100%;
+    border: 1px solid #e6ebf5;
+    border-radius: 3px;
+}
+
+/* 表格头部 */
+.roleTablehead {
+    padding: 18px 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #e6ebf5;
+}
+
+.role td:nth-of-type(5) .cell .el-tooltip,
+.role td:nth-of-type(6) .cell .el-tooltip {
+    text-align: left;
+    width: 100%;
+    line-height: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.role th:nth-of-type(5) .cell,
+.role td:nth-of-type(5) .cell {
+    text-align: left;
+}
+
+.role .roleTablebody {
+    padding: 20px;
+}
+
+.role th:nth-of-type(7) .cell,
+.role td:nth-of-type(7) .cell {
+    text-align: center;
+}
+
+.role .el-form-item {
+    margin-bottom: 15px;
+}
+
+.topbtn {
+    margin-top: 5px;
+}
+
+.role .el-card {
+    /* margin-top: 56px; */
+}
+
+/* 右边卡片头部 */
+.role .el-card__header {
+    font-weight: bold;
+    position: relative;
+}
+
+/* 右边卡片头部按钮 */
+.role .el-card__header button {
+    height: 28px;
+    width: 58px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 0px;
+}
+
+.role .el-table .el-table__cell {
+    padding: 10px 0px;
+}
+
+.rolefrom div:nth-of-type(3) .el-input__inner,
+.rolefrom .el-form-item__content,
+.rolefrom .el-input {
+    width: 140px;
+}
+
+.el-form-item__content {
+    margin-top: 10px;
+    line-height: 0px;
+
+}
+
+.roledialog {
+    width: 520px !important;
+    text-align: left;
+}
+
+.rolefrom .el-input-number__increase {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 41px;
+    line-height: 15px !important;
+    width: 30px;
+    height: 14px !important;
+}
+
+.rolefrom .el-input-number.is-controls-right .el-input-number__decrease {
+    right: 41px;
+    bottom: 5px;
+    top: auto;
+    left: auto;
+    height: 14px;
+    line-height: 15px !important;
+    width: 30px;
+
+}
+
+.rolefrom .el-textarea__inner {
+    width: 400px
+}
+
+.level .el-select-dropdown__item {
+    padding: 0 20px !important;
+}
+
+.level .el-select-dropdown__item:hover {
+    background-color: #F5F7FA !important;
+}
+
+.roledialog .el-button--default {
+    border: none;
+    color: #1890ff;
+}
+
+.roledialog .el-button--default:hover {
+    background-color: #fff !important;
+}
+
+.roledialog .el-form-item__error {
+    padding: 0px;
+}

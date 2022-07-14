@@ -1,0 +1,2 @@
+公用方法写在 utils/common 文件里
+通用组件写在components 下
